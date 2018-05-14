@@ -1,6 +1,30 @@
-frontend-nanodegree-arcade-game
+# Arcade Game - Avoid the ladybugs
 ===============================
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+## Characters
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+This game contains three types of characters:
+
+1. The player
+2. The ladybugs
+3. The star
+
+You are the player, who must defeat the ladybugs which are your enemies. And the star is your prize which you need to collect in order to win.
+
+## How to run the game
+
+Find the index.html document and open it into your default browser.
+You will get the instructions on how to play the game in a pop-up window, but you can also find these instructions below.
+
+## How to play
+
+Your main goal in this game is to avoid the insects and collect 10 stars. For every star collected, you receive 10 points. If you reach 100 points, you win. 
+But be careful, you cannot escape into the water and run away!
+
+Use the arrows on your keyboard to move around your player. Remember that you cannot move off the canvas and those ladybugs will just keep on coming. 
+
+Pay attention to the insects and stay away from them. If they touch you, your number of lives will decrease until you have none. And then, you lose the game. A pop-up window will appear to emphasize that.
+
+But if you manage to avoid them and collect all the stars, then you win. Another pop-up window will appear, but a more cheerful one.
+
+Have fun!

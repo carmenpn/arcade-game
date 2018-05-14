@@ -1,3 +1,129 @@
 body {
     text-align: center;
 }
+
+canvas {
+	padding: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+h2 {
+	text-align: center;
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-family: sans-serif;
+}
+
+/*HEADER*/
+
+header {
+	font-family: sans-serif;
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header img {
+	width: 30px;
+}
+
+.hearts {
+	float: left;
+}
+
+.score {
+	float: right;
+}
+
+.restart-button img {
+	width: 25px;
+}
+
+/*Instructions*/
+
+#instructions {
+	display: block;
+}
+
+#instructions p span {
+	color: red;
+}
+
+/*Pop-ups*/
+
+.pop-up {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pop-up-content {
+	background-color: white;
+	margin: 10% auto;
+	padding: 30px;
+	width: 60%;
+}
+
+.close-button img {
+	transition: all .2s ease-in-out;
+	color: #aaa;
+	float: right;
+	width: 15px;
+	padding-top: 5px;
+	padding-right: 5px;
+	font-weight: bold;
+}
+
+p {
+	font-family: sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+p img {
+	width: 80px;
+}
+
+.close-button img:hover,
+.close-button img:focus {
+	transform: scale(1.1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+	padding: 10px;
+	border: 0;
+	color: black;
+	background-color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+button:hover {
+	color: white;
+	background-color: #2b7873;
+	cursor: pointer;
+}
+
+/*Winning Modal*/
+
+#win {
+	display: none;
+}
+
+/*Losing Modal*/
+
+#lose {
+	display: none;
+}

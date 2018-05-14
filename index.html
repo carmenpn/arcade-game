@@ -6,6 +6,65 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+	<!-- Instructions modal - Appears when you click on the page -->
+	<div class="pop-up" id="instructions">
+		<div class="pop-up-content">
+			<span class="close-button">
+				<img src="images/close.svg" alt="close pop-up">
+			</span>
+			<h2>Instructions</h2>
+			<p>You need to collect 10 stars. For every star collected, you win 10 points. When you reach 100 points, you win. </p>
+			<p>Remember to <span>avoid the ladybugs</span> or you will pay the price: you will lose a life everytime you touch one.</p>
+			<p></p>
+			<p><em>Tip:</em> You cannot escape into the water! But you are safe on the grass.</p>
+			<p>Use your keyboard and have fun!</p>
+		</div>
+	</div>
+
+	<header>
+		<h2>Avoid the ladybugs</h2>
+		<div class="hearts">
+			<img src="images/Heart.png" alt="hearts">
+			<img src="images/Heart.png" alt="hearts">
+			<img src="images/Heart.png" alt="hearts">
+		</div>
+		<div class="score"><span id="count-score">0</span> points</div>
+		<div class="restart-button">
+			<img src="images/restart.svg" alt="restart button"> <!-- Icon from www.flaticon.com -->
+		</div>
+	</header>
+
+	<!-- "You win" Modal -->
+	<div id="win" class="pop-up">
+		<div class="pop-up-content">
+			<span class="close-button">
+				<img src="images/close.svg" alt="close pop-up">
+			</span>
+			<p>
+				Congratulations! You defeated the ladybugs.
+			</p>
+			<p>
+				<img src="images/in-love.svg" alt="Happy face"> <!-- Icon from www.flaticon.com -->
+	 		</p>
+		</div>
+	</div>
+
+	<!-- "You lose" Modal -->
+	<div id="lose" class="pop-up">
+		<div class="pop-up-content">
+			<span class="close-button">
+				<img src="images/close.svg" alt="close pop-up">
+			</span>
+			<p>
+				<!-- Icon from www.flaticon.com -->
+				<img src="images/sad.svg" alt="sad face">
+			</p>
+			<p>It seems that the ladybugs have defeated you.</p>
+			<button>Try again?</button>
+		</div>
+	</div>
+
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>

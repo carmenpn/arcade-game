@@ -119,7 +119,7 @@ var Engine = (function(global) {
             row, col;
         
         // Before drawing, clear existing canvas
-        ctx.clearRect(0,0,canvas.width,canvas.height)
+        ctx.clearRect(0,0,canvas.width,canvas.height);
 
         /* Loop through the number of rows and columns we've defined above
          * and, using the rowImages array, draw the correct image for that
@@ -154,6 +154,7 @@ var Engine = (function(global) {
         });
 
         player.render();
+        star.render();
     }
 
     /* This function does nothing but it could have been a good place to
@@ -161,7 +162,14 @@ var Engine = (function(global) {
      * those sorts of things. It's only called once by the init() method.
      */
     function reset() {
-        // noop
+        // reset player
+        player.reset();
+        // reset star
+        star.reset();
+        // reset enemies
+        allEnemies.forEach(function(enemy) {
+            enemy.reset();
+        });
     }
 
     /* Go ahead and load all of the images we know we're going to need to
@@ -173,7 +181,9 @@ var Engine = (function(global) {
         'images/water-block.png',
         'images/grass-block.png',
         'images/enemy-bug.png',
-        'images/char-boy.png'
+        'images/char-boy.png',
+        'images/char-pink-girl.png',
+        'images/star.png',
     ]);
     Resources.onReady(init);
 
