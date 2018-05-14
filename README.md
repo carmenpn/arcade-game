@@ -1,5 +1,7 @@
 # Arcade Game - Avoid the ladybugs
 
+This is another project I created for the Google Udacity course - a complex game, where you are the hero and you need to defeat the enemies while you struggle to collect the stars.
+
 ## Characters
 
 This game contains three types of characters:
