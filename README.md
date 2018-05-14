@@ -1,5 +1,4 @@
 # Arcade Game - Avoid the ladybugs
-===============================
 
 ## Characters
 
